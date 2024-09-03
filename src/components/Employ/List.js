@@ -46,7 +46,7 @@ class EmployeeTable extends React.Component {
 
     componentDidMount() {
         axios({
-            url: 'http://localhost:6105/allEmployees',
+            url: 'https://employserver.onrender.com/allEmployees',
             method: 'get',
             headers: { 'Content-Type': 'application/json' }
         }).then(res => {
@@ -104,7 +104,7 @@ class EmployeeTable extends React.Component {
         formData.append('course', this.state.course.join(", "));
         formData.append('avatar', this.state.avatar);
 
-        axios.put(`http://localhost:6105/updateEmployee/${mailPara}`, formData, {
+        axios.put(`https://employserver.onrender.com/updateEmployee/${mailPara}`, formData, {
             headers: {
                 'Content-Type': 'multipart/form-data'
             }
@@ -136,7 +136,7 @@ class EmployeeTable extends React.Component {
 
         if (namePara === verifyName) {
 
-            axios.delete(`http://localhost:6105/remove/${namePara}`, {
+            axios.delete(`https://employserver.onrender.com/remove/${namePara}`, {
                 headers: {
                     'Content-Type': 'multipart/form-data'
                 }
