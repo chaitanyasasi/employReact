@@ -27,7 +27,7 @@ const Login = () => {
    
     const checkout = () => {
         console.log(values)
-        fetch(`http://localhost:6105/LogIn`,{
+        fetch(`https://employserver.onrender.com/LogIn`,{
             method: 'POST',
             headers:{
                 'accept':'application/json',
