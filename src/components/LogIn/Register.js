@@ -26,7 +26,7 @@ const Regsiter = () => {
 
     const checkout = () => {
         console.log(values)
-        fetch(`http://localhost:6105/register`,{
+        fetch(`https://employserver.onrender.com/register`,{
             method: 'POST',
             headers:{
                 'accept':'application/json',
