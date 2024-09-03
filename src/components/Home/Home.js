@@ -65,7 +65,7 @@ class HomeOne extends React.Component {
         formData.append('course', this.state.course.join(", "));
         formData.append('avatar', this.state.avatar);
 
-        axios.post("http://localhost:6105/employees", formData, {
+        axios.post("https://employserver.onrender.com/employees", formData, {
             headers: {
                 'Content-Type': 'multipart/form-data'
             }
