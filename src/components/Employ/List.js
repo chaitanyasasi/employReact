@@ -201,7 +201,7 @@ class EmployeeTable extends React.Component {
                                     <td>{employee.gender}</td>
                                     <td>{employee.course}</td>
                                     <td>
-                                        <img src={`http://localhost:6105/${employee.avatar}`} alt="avatar" style={{ width: '50px', height: '50px' }} />
+                                        <img src={`https://employserver.onrender.com/${employee.avatar}`} alt="avatar" style={{ width: '50px', height: '50px' }} />
                                     </td>
                                     <td onClick={() => this.handleModal('checkModel', true)}><button onClick={() => this.setState({ mailPara: employee.email })}>Edit</button></td>
                                     <td onClick={() => this.handleModal('removeModal', true)}><button onClick={() => this.setState({ namePara: employee.fullName })} >Del</button></td>
